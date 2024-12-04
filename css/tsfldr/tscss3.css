@@ -6,7 +6,7 @@
 /* *Extra small devices** */
 @media (min-width: 200px) and (max-width: 767px) {
   :root {
-    --tsfs-scale: 0.25;
+    --tsfs-scale: 0.20;
     --tsfs-scaleSm: 0.30;
     --tslh-scale: 0.55;
     --tslogo-scaleH: 0.15;
