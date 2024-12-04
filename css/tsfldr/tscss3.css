@@ -7,7 +7,7 @@
 @media (min-width: 200px) and (max-width: 767px) {
   :root {
     --tsfs-scale: 0.25;
-    --tsfs-scaleSm: 0.40;
+    --tsfs-scaleSm: 0.30;
     --tslh-scale: 0.55;
     --tslogo-scaleH: 0.15;
     --tslogo-scaleH2: 0.45;
