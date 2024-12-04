@@ -1,0 +1,429 @@
+@charset "utf-8";
+@import url(./tscss1.css);
+
+/* ****Global***** */
+.bordr60
+{
+    border-radius: 60px;
+}
+.bordr90
+{
+    border-radius: 90px;
+}
+.bordr31
+{
+   border-radius: 31px;
+}
+.bordr16
+{
+    border-radius: 16px;
+}
+.bordr30
+{
+    border-radius: 30px;
+}
+.bordrRds50
+{
+    border-radius: 50%;
+}
+.bordrRds22
+{
+    border-top-left-radius:22px ;
+    border-top-right-radius:22px ;
+    border-bottom-left-radius:22px ;
+    border-bottom-right-radius:22px ;
+    
+}
+.Qobn_bg
+{
+    background-image: url('../../tsimg/qobon-card.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 224.33px;
+    aspect-ratio: 491.69/224.33;
+}
+#tsqbnsbycats .col-5 , #tsnewqbns .col-5{
+    flex: 0 0 calc(184.59px / 491.69px) !important;
+}
+#tsqbnsbycats .col-7 , #tsnewqbns .col-7{
+    flex: 0 0 calc(307.1px / 491.69px) !important;
+}
+footer .tscl-ftr-plc-hdr::placeholder 
+{
+    color: var(--tscl-ftr-plc-hdr);
+    font-family: TSFntLight;
+    font-size: var(--tsfs-12);
+   
+}
+footer .tscl-ftr-plc-hdr
+{
+    border: 1px solid var(--tscl-text4);
+    outline: none !important;
+}
+footer .mail-btn
+{
+    transform: translateY(-50%) !important;
+}
+.search_btn
+{
+    transform: translateY(-50%) !important;
+}
+.accordion-button
+{
+    background-color: var(--tscl-card-bg) !important;
+    border-radius: 45px !important;
+    
+}
+.accordion-item
+{
+    border-radius: 45px !important;
+    background-color: var(--tscl-card-bg) !important;
+    border: 0 !important;
+}
+.accordion-button:focus {
+    z-index: 3 !important;
+    border-color: none !important;
+    outline: 0 !important;
+    box-shadow: none !important ;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--tscl-0) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    
+}
+.accordion-button:not(.collapsed)::after
+{
+    background-image: url("../../tsimg/qobon-arrowdown.svg") !important;
+    background-color: var(--tscl-main) !important;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    margin-right: auto;
+    content: "";
+    color: var(--tscl-main);
+    background-image: url("../../tsimg/qobon-arrowup.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2rem !important;
+    position: absolute !important;
+    left: 0 !important;
+    background-position: center !important;
+}
+.tsc-sec-tstopslider .CarouselNav_btn
+{
+    background-color: var(--tscl-F);
+}
+.apply-del-btn{
+    width: 100% !important;
+    max-width: 400px; /*this is the actual width of canvas in bootstrap*/
+}
+img , i{
+    cursor: pointer;
+}
+/* **Header** */
+
+
+.TSWView header .active
+{
+    border-top: 4px solid var(--tscl-0) !important;
+}
+.TSMView .active
+{
+    border-top: none !important;
+}
+.togglerMnuIcn
+{
+    width: 1.4rem !important ;
+    height: 1.4rem !important;
+}
+#topMenu
+{
+  transition:  0.9s ease-in-out;
+}
+.TSMView #topMenu
+{
+    position: absolute;
+    top: 0;
+}
+.active a{
+  font-family: TSFntBold;
+}
+header input , #tsqbnsbycats input{
+    border: 0;
+    outline: none;
+    border-radius: 60px;
+    background-color: var(--tscl-card-bg);
+    padding-right: 23px;
+}
+header button img{
+    width: 17px;
+    height: 17px;
+
+}
+header .hdr_search
+{
+    max-height: 45px !important;
+}
+header .navbar
+{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+header input::placeholder , #tsqbnsbycats input::placeholder
+{
+    color: var(--tscl-hdr-plc-hdr);
+    font-family: TSFntRegular;
+    font-size: var(--tsfs-16);
+ 
+}
+
+header .hdr_btn1 {
+    border-radius: 60px;
+    background-color: var(--tscl-0);
+    outline: none;
+    max-height: 43px;
+}
+.TSMView header .hdr_btn1 
+{
+    border-radius: 50% !important;
+}
+.TSMView #topMenu .hdr_btn1 
+{
+    border-radius: 60px !important;
+}
+.hdr_btn1 img{
+    width: 17px;
+    height: 17px;
+}
+.dropdown .dropdown-toggle
+{
+    border-radius: 60px;
+    background-color: var( --tscl-main);
+    color: var(--tscl-0);
+    border-color: transparent !important;
+    outline: none !important;
+}
+.TSWView header .topMenu{
+    border-top: 1px solid var(--tscl-bordr-hdr);
+    border-bottom: 1px solid var(--tscl-bordr-hdr);
+}
+.dropdown .dropdown-toggle span
+{
+    color: var(--tscl-0);
+}
+
+/* ******************** TS-Home **************************/
+.category-item
+{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.custom-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.radio-option:hover {
+    background-color: #f8f9fa;
+    border-radius: 25px;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-circle {
+    width: 24px;
+    height: 24px;
+    border: 5px solid var(--tscl-0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.radio-option input[type="radio"]:checked + .radio-circle {
+    border-color: var(--tscl-0) !important;
+    background-color: var(--tscl-main);
+}
+
+.radio-option input[type="radio"]:checked + .radio-circle::after {
+    background-color: #000;
+}
+
+.radio-label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #212529;
+    margin: 0;
+}
+/* top slider */
+#tstopslider .shpNow
+{
+    border-radius: 60px;
+}
+
+/* categories */
+.CarouselNav_btn
+{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bdg_container
+{
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--tscl-0);
+}
+
+#tsbststores .bdg_container
+{
+    width: 9em !important;
+    height: 9em !important;
+}
+
+/* best stores */
+.tsc-sec-tsbststores .owl-stage
+{
+    margin-right: 10px;
+}
+
+/********************** TS-Stores **************/
+.stors_srch_inpt{
+    border: 0;
+    outline: none;
+    border-radius: 60px;
+    background-color: var(--tscl-card-bg);
+    padding-right: 23px;
+}
+.stors_srch_inpt::placeholder
+{
+    font-family: TSFntRegular;
+    font-size: var(--tsfs-14);
+    color: var(--tscl-bdy-plc-hdr);
+}
+.catBtn ,.temoCard .fa-chevron-left{
+    right: 0;
+    transition: 0.6s ease-in-out !important;
+}
+
+
+.pagination .pg_num , .pagination .nxt_pgsNms 
+{
+    width: 2em;
+    height : 2em; 
+}
+.pagination .bordrRds50
+{
+    border-color: var(--tscl-0) !important;
+}
+.active_bg_black{
+    background-color: black;
+    color: white;
+}
+
+/* ******************TS-about-us *************************** */
+
+/* tsstts */
+.tsaboutus .tsc-sec-tsstts
+{
+    border-bottom-left-radius: 85px;
+    border-bottom-right-radius: 85px;
+}
+/* tswhy */
+.tsaboutus .tsc-sec-tswhy
+{
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+}
+/* ts-parteners */
+#tsprtnrs .bdg_container
+{
+    width: 6.5rem !important;
+    height: 6.5rem !important;
+}
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, 
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.9) 20%,
+        rgba(255, 255, 255, 0.7) 40%,
+        rgba(255, 255, 255, 0.4) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+/* contact-us */
+.tsaboutus .tsc-sec-tscmncus
+{
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+}
+/* **********************TS-blogs *************************** */
+/* Blog lists */
+.tsc-sec-tspstslist .nav-item {
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    background-color: var(--tscl-card-bg);
+}
+
+.tsc-sec-tspstslist  .nav-item:hover {
+    color:var(--tscl-main);
+    background: var(--tscl-0);
+}
+
+.tsc-sec-tspstslist  .nav-item.active {
+    color:var(--tscl-main);
+    background: var(--tscl-0);
+ 
+}
+.tsc-sec-tspstslist .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.tsc-sec-tspstslist .owl-item {
+    display: flex;
+    justify-content: center;
+    min-width: auto !important;
+}
+
+
+
+
