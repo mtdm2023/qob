@@ -1,0 +1,34 @@
+.carousel-gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, 
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.9) 20%,
+        rgba(255, 255, 255, 0.7) 40%,
+        rgba(255, 255, 255, 0.4) 60%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Make sure carousel items are visible through the overlay */
+.owl-carousel .owl-item {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adjust navigation button to appear above gradient */
+.CarouselNav_btn {
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .carousel-gradient-overlay {
+        width: 100px;
+    }
+}
